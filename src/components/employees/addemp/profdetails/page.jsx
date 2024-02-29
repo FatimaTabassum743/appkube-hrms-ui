@@ -180,7 +180,8 @@ const ProfessionalInfo = ({ tab, setTab }) => {
              
                 type="text"
                 value={professionalDetails.pfNumber}
-                onChange={(e) => handleChange("uanNumber", e.target.value)}
+                style={{width:"100%", marginLeft:"3%"}}
+                onChange={(e) => handleChange("pfNumber", e.target.value)}
               />
             </Form.Item>
           </Col>
@@ -205,7 +206,7 @@ const ProfessionalInfo = ({ tab, setTab }) => {
               
                 type="text"
                 value={professionalDetails.uanNumber}
-                onChange={(e) => handleChange("pfNumber", e.target.value)}
+                onChange={(e) => handleChange("uanNumber", e.target.value)}
               />
             </Form.Item>
           </Col>
@@ -359,7 +360,10 @@ const ProfessionalInfo = ({ tab, setTab }) => {
           htmlType="submit"
           className="bg-[#1890ff]"
           style={{ borderRadius: "0", height: "40px", width: "80%",display:"flex", justifyContent:"center", marginLeft:"40%"}}
-        >
+          onClick={()=>{
+            setTab(tab+1)
+          }}>
+        
           Next
         </Button>
       </Col>
