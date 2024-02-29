@@ -29,6 +29,11 @@ export const slice = createSlice({
     setSelectedDate: (state, action) => {
       state.selectedDate = action.payload;
     },
+    // editing form 
+    editForm:(state,action)=>{
+      
+
+    }
     
    
   },

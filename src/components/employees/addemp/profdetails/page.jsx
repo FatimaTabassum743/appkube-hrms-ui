@@ -360,9 +360,8 @@ const ProfessionalInfo = ({ tab, setTab }) => {
           htmlType="submit"
           className="bg-[#1890ff]"
           style={{ borderRadius: "0", height: "40px", width: "80%",display:"flex", justifyContent:"center", marginLeft:"40%"}}
-          onClick={()=>{
-            setTab(tab+1)
-          }}>
+          onClick={()=>{setTab(tab+1)}}
+          >
         
           Next
         </Button>
