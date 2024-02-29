@@ -112,6 +112,7 @@ const ProfessionalInfo = ({ tab, setTab }) => {
           padding: "50px",
           text:"start"
         }}
+        initialValues={professionalDetails}
         labelAlign="left"
       
         labelCol={{
